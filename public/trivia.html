@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link href="styles.css" rel="stylesheet">
+  <script defer src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  <script defer src="script.js"></script>
+  <title>Trivia Site</title>
+</head>
+<body>
+  <header class="header">
+    <nav class="title">
+      <ul>
+        <li>
+          <a class="link" href="index.html">Home</a>
+          <a class="link" href="https://www.rd.com/list/history-questions/">More History Questions Here</a>
+          <a class="link" href="https://www.rd.com/list/science-trivia-questions/">More Science Questions Here</a>
+          <a class="link" href="https://www.50states.com/tools/thelist.htm">State Capital Info Here</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  <div class="container">
+    <div id="question-container" class="hide">
+      <div id="question">Question</div>
+      <div id="answer-buttons" class="btn-grid">
+        <button class="btn">Answer 1</button>
+        <button class="btn">Answer 2</button>
+        <button class="btn">Answer 3</button>
+        <button class="btn">Answer 4</button>
+      </div>
+      <div id="timer"></div>
+    </div>
+    <div class="controls">
+        <button id="science" class="topic-btn btn">Science</button>
+        <button id="state-capital" class="topic-btn btn">State Capitals</button>
+        <button id="history" class="topic-btn btn">History</button>
+      <!-- <button id="start-btn" class="start-btn btn">Start</button> -->
+      <button id="next-btn" class="next-btn btn hide">Next</button>
+      <button id="restart-btn" class="restart-btn btn hide">Finish</button>
+    </div>
+    <div id="score"></div>
+  </div>
+</div>
+<div>
+</div>
+</div>
+</body>
+</html>
